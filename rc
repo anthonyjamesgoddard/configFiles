@@ -16,6 +16,8 @@ Plugin 'whatyouhide/vim-gotham'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'rust-lang/rust.vim'
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'vim-airline/vim-airline'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
