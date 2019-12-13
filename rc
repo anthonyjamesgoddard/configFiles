@@ -17,13 +17,19 @@ Plugin 'rhysd/vim-clang-format'
 Plugin 'rust-lang/rust.vim'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
+Plugin 'tyrannicaltoucan/vim-deep-space'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-colorscheme slate
+set background=dark
+colorscheme deep-space
 highlight Cursor guifg=white guibg=black
+
+let g:deepspace_italics=1
+let g:airline_theme='deep_space'
+
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:ycm_show_diagnostics_ui = 0
 
