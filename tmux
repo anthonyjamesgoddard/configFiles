@@ -51,6 +51,8 @@ set -sg escape-time 0
 # Reload tmux config
 bind r source-file ~/.tmux.conf
 
+bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
+
 # THEME
 set -g status-bg black
 set -g status-fg white
